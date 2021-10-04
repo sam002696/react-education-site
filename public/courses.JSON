@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "course_name": "Programming Techniques",
+        "author_name": "Ana Murphy",
+        "description": "Lobortis arcu, a vestibulum augue. Vivamus ipsum neque, facilisis vel mollis vitae.",
+        "rating": 4.2,
+        "reviews": 920,
+        "price": 50,
+        "img": "https://themepure.net/template/educal/educal/assets/img/course/course-6.jpg"
+    },
+    {
+        "id": 2,
+        "course_name": "Complete Javascript Course",
+        "author_name": "John Dahson",
+        "description": "Lobortis arcu, a vestibulum augue. Vivamus ipsum neque, facilisis vel mollis vitae.",
+        "rating": 4.1,
+        "reviews": 890,
+        "price": 51,
+        "img": "https://themepure.net/template/educal/educal/assets/img/course/course-5.jpg"
+    },
+    {
+        "id": 3,
+        "course_name": "Learning Web Development and Design",
+        "author_name": "Tom Steven",
+        "description": "Lobortis arcu, a vestibulum augue. Vivamus ipsum neque, facilisis vel mollis vitae.",
+        "rating": 4.2,
+        "reviews": 780,
+        "price": 89,
+        "img": "https://themepure.net/template/educal/educal/assets/img/course/course-4.jpg"
+    },
+    {
+        "id": 4,
+        "course_name": "jQuery Mobile for Beginners",
+        "author_name": "Dakota Jason",
+        "description": "Lobortis arcu, a vestibulum augue. Vivamus ipsum neque, facilisis vel mollis vitae.",
+        "rating": 4.6,
+        "reviews": 920,
+        "price": 50,
+        "img": "https://themepure.net/template/educal/educal/assets/img/course/course-3.jpg"
+    },
+    {
+        "id": 5,
+        "course_name": "Web Technology",
+        "author_name": "Murphy Paul",
+        "description": "Lobortis arcu, a vestibulum augue. Vivamus ipsum neque, facilisis vel mollis vitae.",
+        "rating": 4.2,
+        "reviews": 920,
+        "price": 50,
+        "img": "https://themepure.net/template/educal/educal/assets/img/course/course-2.jpg"
+    },
+    {
+        "id": 6,
+        "course_name": "Learning Python Data Analysis",
+        "author_name": "Chris Hemsworth",
+        "description": "Lobortis arcu, a vestibulum augue. Vivamus ipsum neque, facilisis vel mollis vitae.",
+        "rating": 4.1,
+        "reviews": 620,
+        "price": 50,
+        "img": "https://themepure.net/template/educal/educal/assets/img/course/course-1.jpg"
+    }
+]
