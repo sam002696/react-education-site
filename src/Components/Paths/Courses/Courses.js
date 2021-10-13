@@ -1,16 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import AllCourseStyling from './AllCourseStyling';
 import Fade from 'react-reveal/Fade';
+import useAuth from '../../Hooks/useAuth';
 
 const Courses = () => {
+    const { user } = useAuth();
     const [allCourses, setAllCourses] = useState([]);
     useEffect(() => {
         fetch('./allCourses.JSON')
             .then(res => res.json())
             .then(data => setAllCourses(data));
     }, [])
+
     return (
         <div>
+
+            {user.email && <Fade right><div className="font-black italic m-10 react-reveal text-6xl text-center text-gray-500">Welcome, {user.displayName}!</div></Fade>}
             <Fade left cascade>
                 <div>
                     <h1 className='font-bold p-10 text-5xl text-center'>Courses</h1>

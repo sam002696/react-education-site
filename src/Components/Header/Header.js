@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useAuth from '../Hooks/useAuth';
+
 
 const Header = () => {
+    const { user, logOut } = useAuth();
     return (
         <div>
             <nav className=" bg-gray-700 flex items-center justify-between flex-wrap bg-teal-500 p-6">
@@ -41,9 +44,17 @@ const Header = () => {
                         <Link to='/instructors' className=" text-white block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 hover:animate-bounce-slow">
                             Instructors
                         </Link>
-                        <Link to='/aboutus' className=" text-white block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white hover:animate-bounce-slow">
+                        <Link to='/aboutus' className=" text-white block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white hover:animate-bounce-slow mr-2">
                             About Us
                         </Link>
+                        {user.email ?
+                            <Link to='/login' className=" text-white block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-2">
+                                <button onClick={logOut} className='border-2 focus:ring-2 focus:ring-gray-400 hover:bg-blue-400 hover:text-black p-1 rounded'>Log Out </button>
+                            </Link> :
+                            <Link to='/login' className=" text-white block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-2">
+                                <button className='border-2 focus:ring-2 focus:ring-gray-400 hover:bg-blue-400 hover:text-black p-1 rounded'>Login </button>
+                            </Link>
+                        }
                     </div>
                 </div>
             </nav>
